@@ -1,52 +1,54 @@
-# Smart Campus Device Management System
+# The Haunted Manor Hotel — Management System
 
-A console-based C++ application for managing smart devices across a university campus, built using Object-Oriented Programming principles.
+A systems analysis report for a proposed hotel management system for **The Haunted Manor**, a spooky-themed hotel in the Welsh Countryside specialising in themed weddings, corporate events, and Halloween-season experiences.
+
+> **Module:** CO1065 Systems Analysis & Database Design  
+> **Type:** Individual Report
+
+---
 
 ## About
 
-This system lets campus administrators register, monitor, and control IoT devices — security cameras, air conditioners, projectors, room lights, and door locks — through an interactive text menu. It demonstrates inheritance, polymorphism, encapsulation, and dynamic memory management in C++.
+The Haunted Manor Hotel currently suffers from operational inefficiencies in booking, resource allocation, and staff communication — leading to misplaced bookings, food order mix-ups, and housekeeping issues. This report analyses the hotel's existing workflows and proposes a new integrated management system to address these problems.
 
-## Device Types
+---
 
-| Type | Key Attributes |
+## What the Report Covers
+
+**Analysis**
+- Use Case Diagram and Activity Diagram for the event booking process
+- Textual description of the Manage Events use case (actors, pre/post-conditions, alternate paths)
+
+**Requirements**
+- Functional requirements across 6 system areas: Room Booking, Event Booking, Food Ordering, Housekeeping & Maintenance, Inventory Management, and Billing
+- Non-functional requirements: performance, usability, security, availability, and reliability
+- User Stories for key roles (guest, chef, housekeeper)
+- MoSCoW prioritisation of all requirements
+
+**Lifecycle Options**
+- Comparison of Waterfall vs Agile methodologies
+- Recommendation: a hybrid approach — Waterfall for initial planning and core design, Agile for feature development and iteration
+
+**The Role of the User**
+- Importance of user communication across all SDLC phases
+- How each phase (requirements, design, development, testing, maintenance) benefits from active stakeholder involvement
+
+---
+
+## Proposed System Modules
+
+| Module | Key Functionality |
 |---|---|
-| Security Camera | Quality (720p/1080p/4k), Power source (mains/battery/solar) |
-| Air Conditioning | Target temperature (0–36 °C) |
-| Projector | Input (VGA/HDMI/Wireless), Brightness (0–100) |
-| Room Lighting | Brightness (0–100) |
-| Door Lock | Lock state, Last opened by |
+| Room Booking | Online booking, real-time availability, no double-booking |
+| Event Booking | Venue scheduling, catering customisation, conflict prevention |
+| Food Ordering | Digital orders routed directly to kitchen from restaurant/bar/room service |
+| Housekeeping | Auto-generated cleaning schedules based on guest check-out status |
+| Inventory | Stock monitoring, automatic replenishment, supplier tracking |
+| Billing | Invoicing, payment tracking, multiple payment methods |
 
-## Getting Started
-
-**Requirements:** Visual Studio 2019/2022 and C++17 or later.
-
-```bash
-git clone https://github.com/Hyzen-collab/SmartCampusDeviceSystem.git
-```
-
-Open `Smart_Campus.sln` in Visual Studio, build with `Ctrl + Shift + B`, and run with `Ctrl + F5`.
-
-**Linux/macOS (g++):**
-```bash
-cd Smart_Campus
-g++ -std=c++17 -o SmartCampus *.cpp
-./SmartCampus
-```
-
-## Menu Options
-
-```
-1.  Add Device              6.  Delete Device
-2.  View All Devices        7.  Activate Single Device
-3.  Activate All Devices    8.  Deactivate Single Device
-4.  Deactivate All Devices  9.  View Single Device's Info
-5.  Interact All Devices    10. Interact Single Device
-0.  Exit
-```
+---
 
 ## Author
 
-**Idusha Piumika** — G21328023  
-[github.com/Hyzen-collab](https://github.com/Hyzen-collab)
-
-> Developed as part of a C++ Object-Oriented Programming module.
+**Idusha Piumika**  
+CO1065 Systems Analysis & Database Design
